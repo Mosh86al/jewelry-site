@@ -147,11 +147,8 @@
     gap: 14px;
   }
 
-  nav .tag:nth-of-type(5) { grid-column: 2 / span 2; }
-
   @media (max-width: 480px) {
     nav { grid-template-columns: repeat(2, 1fr); }
-    nav .tag:nth-of-type(5) { grid-column: 1 / span 2; }
   }
 
   .tag {
@@ -180,6 +177,7 @@
   .tag:nth-of-type(3) { animation-delay: 0.8s; }
   .tag:nth-of-type(4) { animation-delay: 0.9s; }
   .tag:nth-of-type(5) { animation-delay: 1.0s; }
+  .tag:nth-of-type(6) { animation-delay: 1.1s; }
 
   .tag:hover, .tag:focus-visible {
     border-color: var(--pink);
@@ -227,7 +225,7 @@
     font-size: 11.5px;
     color: var(--muted);
     opacity: 0;
-    animation: rise 0.8s ease-out 1.15s forwards;
+    animation: rise 0.8s ease-out 1.25s forwards;
   }
 
   @keyframes rise {
@@ -290,6 +288,15 @@
   <div class="rule"></div>
 
   <nav>
+    <a class="tag" href="https://www.ironit.org.il/type/%D7%97%D7%95%D7%92%D7%99%D7%9D/?events_type_term=52%2C52&amp;events_activity_term=172&amp;data_tab=178" target="_blank" rel="noopener">
+      <span class="icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="14" r="6.5" stroke="#DD5586" stroke-width="1.6"/><circle cx="12" cy="6" r="2.4" fill="none" stroke="#E3B24C" stroke-width="1.6"/></svg>
+      </span>
+      <span class="text">
+        <span class="title">אשדוד</span>
+      </span>
+    </a>
+
     <!-- להחליף את href בקישור האמיתי לאתר הייעודי -->
     <a class="tag" href="https://share.google/1aPndTlBtCegIO8Iy" target="_blank" rel="noopener">
       <span class="icon-wrap">
@@ -337,6 +344,7 @@
     </a>
   </nav>
 
+  <footer>לעריכה: יש להחליף את קישורי ה־href בקוד לכתובות האתרים הייעודיים</footer>
 
 </div>
 
